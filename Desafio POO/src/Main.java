@@ -5,8 +5,8 @@ public class Main {
         Pessoa inae = new Pessoa("Inae", 16, "SP");
         Pessoa richarlison = new Pessoa("Richarlison", 18, "SP");
 
-        inae.aprensentar();
-        richarlison.aprensentar();
+        inae.soma();
+        richarlison.soma();
     }
 }
 
@@ -21,7 +21,9 @@ class Pessoa {
         this.cidade = cidade;
     }
 
-    public void aprensentar(){
-        System.out.println("OLá, meu nome é " + nome + " Tenho " + idade + " anos e moro em " + cidade + "!");
+    public void soma(){
+        int idadeSoma = idade + 1;
+        System.out.println("OLá, meu nome é " + nome + " Tenho " + idadeSoma + " anos e moro em " + cidade + "!");
+
     }
 }
